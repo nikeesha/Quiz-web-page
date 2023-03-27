@@ -1,0 +1,272 @@
+/* Ribbon Style Navigation menu */
+
+.menu-area li {
+  list-style-type: none;
+}
+
+.custom-padding{
+  padding-top: 25px;
+}
+
+nav {
+  position: relative;
+  width: calc(100% - 60px);
+  margin: 0 auto;
+  padding: 10px 0;
+  background: #333;
+  z-index: 1;
+  text-align: right;
+  padding-right: 2%;
+}
+
+.logo {
+  width: 15%;
+  float: left;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: left;
+  padding-left: 2%;
+  color:transparent;
+		-webkit-text-stroke:1px #fff;
+		background:url(animated-text.png);
+		-webkit-background-clip:text;
+		background-position:0 0;
+		animation:back 20s linear infinite;
+}
+
+
+.menu-area li {
+  display: inline-block;
+}
+
+.menu-area a {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+}
+.menu-area a:hover {
+  background: tomato;
+  color: #fff;
+}
+
+.menu-area a:hover:after {
+  transform: translateY(-50%) rotate(-35deg);
+}
+
+nav:before {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-right: 10px solid #333;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  left: 0;
+}
+
+nav:after {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-left: 10px solid #333;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  right: 0;
+}
+
+@keyframes back{
+		100%{
+			background-position:2000px 0;
+		}
+}
+
+
+/*quiz.css*/
+
+a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+	background: linear-gradient(90deg, #DDDDD3,#C6C6BE);
+    background-size: 100%;
+}
+
+.abba_pic {
+	
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  width: 100%;
+}
+	
+
+#pic_text{
+	
+	position: absolute;
+	top: 75%;
+	font-size: 100px;
+    color:white;
+	text-align: center;
+	background-color: black;
+
+}
+
+
+#go_to_quiz_btn {
+	position: absolute;
+    top: 107%;
+    left:75%;
+	font-size: 25px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #DDDDD3;
+    cursor: pointer;
+	color: white;
+	border:1px solid black;
+	border-radius: 1px;
+}
+
+#rulesbox , #quizbox , #resultbox {
+    position: absolute;
+    top: 140%;
+    left:25%;
+	width: 800px;
+    max-width: 80%;
+	background-color: white;
+	border-radius: 1px;
+	padding: 10px;
+	border:1px solid Black;
+    
+}
+
+
+#start_timer_btn, #submit_btn, #close_btn, #show_answers_btn, #closeAnswers_btn{
+    margin:0 5px;
+    height: 40px;
+    border:1px solid Black;
+    background:#DDDDD3;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+	border-radius: 1px;
+}
+
+.editor {
+	position: relative;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+.timer{
+    position: absolute;
+	top: 2%;
+	left: 75%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:140px;
+    height:40px;
+    background: grey;
+    padding: 0px 5px;
+	border:1px solid Black;
+	border-radius: 1px;
+}
+.timertext{
+    font-size: 17px;
+    color: white;
+	padding: 2px;
+}
+
+.timersec{
+    background: black;
+    height:30px;
+    width:45px;
+    color:white;
+    text-align: center;
+    line-height:30px;
+	border-radius: 1px;
+
+}
+
+
+
+.editor {
+	position: absolute;
+	top: 400%;
+}
+
+.questionBox {
+	padding: 1%;
+	padding-left: 2%;
+	align-items: left;
+}
+
+.answers:hover > .label {
+    color: $accent-color;
+}
+
+.colorCorrect {
+	color: green;
+}
+
+.colorIncorrect {
+	color: red;
+}
+
+footer {
+	align-items: center;
+	padding-top: 3%;
+}
+
+.colorGreen {
+	background: #CBE1A3;
+}
+
+.colorYellow {
+	background: #EFE4B1;
+}
+
+.colorRed {
+	background: #E58888;
+}
+
+
+header {
+	font-size: 20px;
+}
+
+.title {
+	padding-top: 6px;
+	padding-left: 10px;
+	padding-bottom: 1px
+
+}
+
+.time_taken , .totalMarks {
+	font-size: 20px;
+	text-align: center;
+	background-color: #DDDDD3;
+}
+
+.gif {
+	padding-left: 20%;
+}

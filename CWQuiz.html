@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>ABBA Quiz</title>
+	<link rel='stylesheet' href="CWQuiz.css">
+	
+</head>
+
+<body id="background">
+
+<!--Ribbon Style Navigation menu-->
+	<div class="custom-padding">
+      <nav>
+        <div class="logo">ABBA</div>
+
+        <ul class="menu-area">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+	
+<!--Quiz-->
+
+	<img src="ABBApic2.jpg" alt="Abba group photo" width="1415" height="828" class="abba_pic">
+	<p id="pic_text">Are you ready to test your ABBA knowledge?</p>
+	<button id="go_to_quiz_btn"><a href="#quizTop">Go to quiz &#8594 </button>
+	<p id="quizTop"></p>
+
+<!--Rules box-->
+
+<div class="hide" id="rulesbox">
+	
+	<header><h4>RULES</h4></header>
+	
+    <section class="rules">  
+		<ol>
+			<li>You have 60 seconds to answer 10 questions</li>
+			<li>You get 2 points for every correct answer </li>
+			<li>You loose 1 point for every wrong answer and blank answer</li>
+		</ol>
+	</section>
+	
+	<footer>	
+		<button id="start_timer_btn">Start timer</button>
+	</footer>
+	
+	</div>
+		
+<!--Quiz box-->
+
+<div class="hide" id="quizbox">
+
+	<header>
+        
+		<h4 class="title">ABBA QUIZ </h4>
+		<span class="timer">
+			<span class="timertext">Time Left</span>
+			<span class="timersec">60</span>
+		</span>
+   
+	</header>
+		
+	<section>
+	
+		<div class="questionBox">
+			<h4>What was ABBA’s first ever single?</h4>
+			<span class="feedback"></span>
+			<div class="answers">
+				<label><input type="radio" name="q1" value="incorrect" class="radioBtn">Chiquitita</label><br>
+				<label><input type="radio" name="q1" value="incorrect" class="radioBtn">Mamma Mia</label><br>
+				<label><input type="radio" name="q1" value="incorrect" class="radioBtn">Dancing Queen</label><br>
+				<label><input type="radio" name="q1" value="correct" class="radioBtn">She’s My Kind of Girl</label>
+			</div>
+		</div>
+		
+		<div class="questionBox">
+			<h4>In what year was Mamma Mia released?</h4>
+			<span class="feedback"></span>
+			<div class="answers">
+				<label><input type="radio" name="q2" value="incorrect" class="radioBtn">1987</label><br>
+				<label><input type="radio" name="q2" value="correct" class="radioBtn">1975</label><br>
+				<label><input type="radio" name="q2" value="incorrect" class="radioBtn">1977</label><br>
+				<label><input type="radio" name="q2" value="incorrect" class="radioBtn">1985</label>
+			</div>
+		</div>
+		
+		<div class="questionBox">
+			<h4>Which member of ABBA sang lead the most?</h4>
+			<span class="feedback"></span>
+			<div class="answers">
+				<label><input type="radio" name="q3" value="incorrect" class="radioBtn">Anni-Frid</label><br>
+				<label><input type="radio" name="q3" value="incorrect" class="radioBtn">Björn</label><br>
+				<label><input type="radio" name="q3" value="correct" class="radioBtn">Agnetha</label><br>
+				<label><input type="radio" name="q3" value="incorrect" class="radioBtn">Benny</label>
+			</div>
+		</div>
+		
+		<div class="questionBox">
+			<h4>Complete the lyric - 'Chiquitita tell me the truth...'</h4>
+			<span class="feedback"></span>
+			<div class="answers">
+				<label><input type="radio" name="q4" value="incorrect" class="radioBtn">I will listen to you baby</label><br>
+				<label><input type="radio" name="q4" value="correct" class="radioBtn">I'm a shoulder you can cry on</label><br>
+				<label><input type="radio" name="q4" value="incorrect" class="radioBtn">I'm your best friend</label><br>
+				<label><input type="radio" name="q4" value="incorrect" class="radioBtn">my shoulder is always yours</label>
+			</div>
+		</div>
+		
+		<div class="questionBox">
+			<h4>What song was from the mini musical 'The girl with the golden hair?'</h4>
+			<span class="feedback"></span>
+			<div class="answers">
+				<label><input type="radio" name="q5" value="incorrect" class="radioBtn">Fernando</label><br>
+				<label><input type="radio" name="q5" value="correct" class="radioBtn">Thank You For the Music</label><br>
+				<label><input type="radio" name="q5" value="incorrect" class="radioBtn">Take a chance on me</label><br>
+				<label><input type="radio" name="q5" value="incorrect" class="radioBtn">Super Trouper</label>
+			</div>
+		</div>
+		
+		<div class="questionBox">
+			<h4>Complete the lyric - 'I believe in...'</h4>
+			<span class="feedback"></span>
+			<div class="answers">
+				<label><input type="radio" name="q6" value="incorrect" class="radioBtn">fairytales</label><br>
+				<label><input type="radio" name="q6" value="incorrect" class="radioBtn">dimples</label><br>
+				<label><input type="radio" name="q6" value="incorrect" class="radioBtn">twinkles</label><br>
+				<label><input type="radio" name="q6" value="correct" class="radioBtn">angels</label>
+			</div>
+		</div>
+		
+		<div class="questionBox">
+			<h4>Guess the song from the lyric - 'Friday night and the lights are low'</h4>
+			<span class="feedback"></span>
+			<div class="answers">
+				<label><input type="radio" name="q7" value="correct" class="radioBtn">Dancing Queen</label><br>
+				<label><input type="radio" name="q7" value="incorrect" class="radioBtn">So long</label><br>
+				<label><input type="radio" name="q7" value="incorrect" class="radioBtn">SOS</label><br>
+				<label><input type="radio" name="q7" value="incorrect" class="radioBtn">Angel Eyes</label>
+			</div>
+		</div>
+		
+		<div class="questionBox">
+			<h4>Guess the song from the lyric - 'I work all night, I work all day to pay the bills I have to pay'</h4>
+			<span class="feedback"></span>
+			<div class="answers">
+				<label><input type="radio" name="q8" value="incorrect" class="radioBtn">Rich mans world</label><br>
+				<label><input type="radio" name="q8" value="incorrect" class="radioBtn">Gimme Gimme Gimme</label><br>
+				<label><input type="radio" name="q8" value="correct" class="radioBtn">Money Money Money</label><br>
+				<label><input type="radio" name="q8" value="incorrect" class="radioBtn">On and On and On</label>
+			</div>
+		</div>
+		
+		<div class="questionBox">
+			<h4>In August 2021 which social media app did ABBA join?</h4>
+			<span class="feedback"></span>
+			<div class="answers">
+				<label><input type="radio" name="q9" value="incorrect" class="radioBtn">Facebook</label><br>
+				<label><input type="radio" name="q9" value="incorrect" class="radioBtn">Twitter</label><br>
+				<label><input type="radio" name="q9" value="incorrect" class="radioBtn">Instagram</label><br>
+				<label><input type="radio" name="q9" value="correct" class="radioBtn">Tik Tok</label>
+			</div>
+		</div>
+		
+		<div class="questionBox">
+			<h4>What is the name of their latest album and it's release date?</h4>
+			<span class="feedback"></span>
+			<div class="answers">
+				<label><input type="radio" name="q10" value="incorrect" class="radioBtn">Arrival 2000</label><br>
+				<label><input type="radio" name="q10" value="incorrect" class="radioBtn">ABBA 1995</label><br>
+				<label><input type="radio" name="q10" value="incorrect" class="radioBtn">Super Trouper 1980</label><br>
+				<label><input type="radio" name="q10" value="correct" class="radioBtn">Voyage 2021</label>
+			</div>
+		</div>	
+		
+		
+	</section>
+
+	<footer>
+		<button id="submit_btn">Submit</button>   
+		<button class="hide" id="closeAnswers_btn">Close</button>
+	</footer>
+	
+</div>
+
+<!--Result box-->
+
+<div class="hide" id="resultbox">
+
+	<header>
+		<h4>Result</h4>
+		<div class="time_taken">Time taken :- </div>
+		<div class="totalMarks">You scored :- </div>
+	</header>
+
+	<section>
+		<div class="gif"><img src="mamma-mia.gif" alt="Mamma mia gif" id="gifGreen" class="hide"></div>
+		<div class="gif"><img src="Meh-Emma-Stone.gif" alt="Emma Stone gif" id="gifYellow" class="hide"></div>
+		<div class="gif"><img src="among-us-among.gif" alt="Among us gif" id="gifRed" class="hide"></div>		
+	</section>
+	
+	<footer>
+		<button id="close_btn">Close</button>
+		<button id="show_answers_btn">Show answers</button>
+	</footer>
+		
+</div>
+	
+
+	
+<footer class="editor" >
+	<hr>
+	<p>Page Editor:- <a href="Page Editor Student 3.html">Nikeesha Attanayake</a></p>
+</footer>
+	
+
+<script src="CWQuiz.js"></script>
+
+</body>
